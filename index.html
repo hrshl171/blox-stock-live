@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blox Fruits Stock Live</title>
+<meta charset="UTF-8">
+<title>Blox Fruits Stock</title>
+<style>
+body{
+    background:#111;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+.box{
+    display:inline-block;
+    width:45%;
+    background:#222;
+    margin:10px;
+    padding:15px;
+    border-radius:15px;
+}
+h1{color:#00ff99;}
+</style>
 </head>
 <body>
-  <h1>🍎 Blox Fruits Stock</h1>
-  <h2>Normal Stock</h2>
-  <h2>Mirage Stock</h2>
+
+<h1>🍎 BLOX FRUITS STOCK</h1>
+
+<div class="box">
+    <h2>Normal Stock</h2>
+    <div id="normal">
+        Loading...
+    </div>
+</div>
+
+<div class="box">
+    <h2>Mirage Stock</h2>
+    <div id="mirage">
+        Loading...
+    </div>
+</div>
+
+<script>
+document.getElementById("normal").innerHTML =
+"Rocket<br>Spin<br>Chop";
+
+document.getElementById("mirage").innerHTML =
+"Blade<br>Dark<br>Ice";
+</script>
+
 </body>
 </html>
