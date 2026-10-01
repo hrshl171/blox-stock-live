@@ -2,51 +2,81 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Blox Fruits Stock</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blox Fruits Stock</title>
+
 <style>
-body{
-    background:#111;
-    color:white;
-    font-family:Arial;
-    text-align:center;
+* {
+    box-sizing: border-box;
 }
-.box{
-    display:inline-block;
-    width:45%;
-    background:#222;
-    margin:10px;
-    padding:15px;
-    border-radius:15px;
+
+body {
+    margin: 0;
+    padding: 20px 8px;
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
-h1{color:#00ff99;}
+
+h1 {
+    color: #00ff99;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.stock-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+}
+
+.box {
+    flex: 1;
+    min-width: 0;
+    background: #222;
+    border-radius: 12px;
+    padding: 12px 6px;
+}
+
+.box h2 {
+    font-size: 17px;
+    margin-top: 0;
+}
+
+.box div {
+    line-height: 1.8;
+    font-size: 15px;
+}
 </style>
 </head>
+
 <body>
 
 <h1>🍎 BLOX FRUITS STOCK</h1>
 
-<div class="box">
-    <h2>Normal Stock</h2>
-    <div id="normal">
-        Loading...
+<div class="stock-container">
+
+    <div class="box">
+        <h2>🟢 Normal Stock</h2>
+        <div>
+            Rocket<br>
+            Spin<br>
+            Chop
+        </div>
     </div>
-</div>
 
-<div class="box">
-    <h2>Mirage Stock</h2>
-    <div id="mirage">
-        Loading...
+    <div class="box">
+        <h2>🔵 Mirage Stock</h2>
+        <div>
+            Blade<br>
+            Dark<br>
+            Ice
+        </div>
     </div>
+
 </div>
-
-<script>
-document.getElementById("normal").innerHTML =
-"Rocket<br>Spin<br>Chop";
-
-document.getElementById("mirage").innerHTML =
-"Blade<br>Dark<br>Ice";
-</script>
 
 </body>
 </html>
